@@ -11,6 +11,12 @@ import android.view.MenuItem;
 
 public class EntryPoint extends AppCompatActivity {
 
+    static {
+        System.loadLibrary("lept");
+        System.loadLibrary("pngt");
+        System.loadLibrary("lept");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
